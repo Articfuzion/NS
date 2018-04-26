@@ -1,0 +1,31 @@
+<RadSideDrawer tkExampleTitle tkToggleNavButton #drawer>
+    <StackLayout tkDrawerContent class="sideStackLayout">
+        <StackLayout class="sideTitleStackLayout">
+            <Label text="Menu"></Label>
+        </StackLayout>
+        <StackLayout class="sideStackLayout">
+            <Label text="Ajouter" class="sideLabel sideLightGrayLabel"></Label>
+            <Label text="Supprimer" class="sideLabel"></Label>
+        </StackLayout>
+        <Label text="Close Drawer" color="lightgray" padding="10" style="horizontalalign:
+center" (tap)="onCloseDrawerTap()"></Label>
+    </StackLayout>
+    <StackLayout tkMainContent>
+        <ScrollView>
+            <StackLayout (tap)="test()">
+                <app-annonce *ngFor="let annonceFor of annoncesTab" [annonceAjout]="annonceFor"></app-annonce>
+            </StackLayout>
+        </ScrollView>
+    </StackLayout>
+</RadSideDrawer>
+
+
+<!--
+<scroll-view>
+    <StackLayout>
+        <Label class="h1 title text-center" color="blue"
+               text="Annonces magueule"></Label>
+        <Label></Label>
+        <app-annonce *ngFor="let annonceFor of annoncesTab" [annonceAjout]="annonceFor"></app-annonce>
+    </StackLayout>
+</scroll-view>-->

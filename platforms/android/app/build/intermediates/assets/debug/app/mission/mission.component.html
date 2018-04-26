@@ -1,0 +1,11 @@
+<ActionBar title="Appli de la mort qui tue">
+  <NavigationButton android.systemIcon="ic_menu_back" text="Back to ActionBar" (tap)="goBack()"></NavigationButton>
+</ActionBar>
+<StackLayout>
+  <Label class="h1 titre"    text="{{fullAnnonce.titre}}"></Label>
+  <Label class="h3" text="{{fullAnnonce.poste}}"></Label>
+  <Label text="{{fullAnnonce.description}}"></Label>
+  <Label text=" à partir du {{fullAnnonce.date | date:'d/M/yy'}}"></Label>
+  <Label text="De {{fullAnnonce.salaire.salaireMinBrut}} à {{fullAnnonce.salaire.salaireMaxBrut}} brut soit {{fullAnnonce.salaire.salaireMinNet}} à {{fullAnnonce.salaire.salaireMaxNet}} Net  "></Label>
+  <Label text="Situé à {{fullAnnonce.lieu}}"></Label>
+</StackLayout>
