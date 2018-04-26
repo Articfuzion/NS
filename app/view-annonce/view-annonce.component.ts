@@ -21,10 +21,17 @@ export class ViewAnnonceComponent implements OnInit {
 
   }
 
-    openNav(){
-        this.drawer.sideDrawer.showDrawer();
-
+    openNav() {
+      if (this.drawer.sideDrawer.getIsOpen()){
+        this.drawer.sideDrawer.closeDrawer()
+      }
+      else {
+        this.drawer.sideDrawer.showDrawer()
+      }
     }
+
+
+
 
     onCloseDrawerTap() {
         this.drawer.sideDrawer.closeDrawer();
