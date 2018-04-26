@@ -13,6 +13,7 @@ import {SalaireService} from "~/service/salaire.service";
 import {ContactService} from "~/service/contact.service";
 import {MissionComponent} from "~/mission/mission.component";
 import {NativeScriptUISideDrawerModule} from "nativescript-ui-sidedrawer/angular";
+import {NativeScriptFormsModule} from "nativescript-angular";
 
 // Uncomment and add to NgModule imports if you need to use two-way binding
 // import { NativeScriptFormsModule } from "nativescript-angular/forms";
@@ -27,7 +28,8 @@ import {NativeScriptUISideDrawerModule} from "nativescript-ui-sidedrawer/angular
     imports: [
         NativeScriptModule,
         AppRoutingModule,
-        NativeScriptUISideDrawerModule
+        NativeScriptUISideDrawerModule,
+        NativeScriptFormsModule
 
     ],
     declarations: [

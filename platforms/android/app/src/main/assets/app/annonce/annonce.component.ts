@@ -1,6 +1,7 @@
-import {Component, Input, OnInit} from '@angular/core';
+import {Component, Input, OnInit, ViewChild} from '@angular/core';
 import {Annonce} from "../models/Annonce";
 import {ActivatedRoute} from "@angular/router";
+import {RadSideDrawerComponent} from "nativescript-ui-sidedrawer/angular";
 
 @Component({
   moduleId: module.id,

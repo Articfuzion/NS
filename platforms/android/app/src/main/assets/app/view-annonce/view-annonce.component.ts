@@ -12,7 +12,7 @@ import {RadSideDrawerComponent} from "nativescript-ui-sidedrawer/angular";
 export class ViewAnnonceComponent implements OnInit {
 
   annoncesTab:Array<Annonce>
-    @ViewCh ild('drawer') public drawer: RadSideDrawerComponent;
+    @ViewChild('drawer') public drawer: RadSideDrawerComponent;
 
   constructor(public as:AnnonceService) { }
 
@@ -20,6 +20,11 @@ export class ViewAnnonceComponent implements OnInit {
     this.annoncesTab=this.as.getAllServices();
 
   }
+
+    openNav(){
+        this.drawer.sideDrawer.showDrawer();
+
+    }
 
     onCloseDrawerTap() {
         this.drawer.sideDrawer.closeDrawer();

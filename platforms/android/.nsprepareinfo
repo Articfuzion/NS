@@ -1,9 +1,9 @@
 {
-	"time": "Thu Apr 26 2018 14:29:01 GMT+0200 (Paris, Madrid (heure d’été))",
+	"time": "Thu Apr 26 2018 16:26:56 GMT+0200 (Paris, Madrid (heure d’été))",
 	"nativePlatformStatus": "3",
 	"bundle": false,
 	"release": false,
-	"changesRequireBuild": true,
+	"changesRequireBuild": false,
 	"projectFileHash": "880447c07ebe00cfb4e0be2b18937419394278c3b17e73a7267cd512b46b973b",
 	"changesRequireBuildTime": "Thu Apr 26 2018 14:29:01 GMT+0200 (Paris, Madrid (heure d’été))"
 }
